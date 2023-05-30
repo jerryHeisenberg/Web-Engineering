@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master1.Master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 48px;
+        }
+    </style>
+</head>
+<body style="background-color: #000000;">
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    <table style="width: 100%;">
+        <tr>
+            <td colspan="2" style="background-color: #00FFFF; height: 48in;">
+                <asp:Image ID="Image1" runat="server" Height="171px" ImageUrl="~/WhatsApp Image 2023-02-20 at 21.28.26.jpeg" style="margin-top: 0px; margin-right: 70px;" Width="167px" />
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" StaticSubMenuIndent="10px">
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" Value="About"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #00FFFF; width: 48in; height: 48px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #00FFFF; height: 48in; position: relative;" class="auto-style1">
+                <footer>Copyright 2023 Contoso Inc.</footer>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
