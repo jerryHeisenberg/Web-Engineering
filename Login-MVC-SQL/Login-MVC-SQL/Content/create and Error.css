@@ -1,0 +1,35 @@
+﻿body {
+    text-align: center;
+    background: url("images/back.jpg") 0px 0px no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:crimson;
+}
+.padding-all {
+    padding: 100px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+    .header h1 img {
+        width: 7%;
+    }
+
+p, a {
+    font-family: 'Cormorant SC', serif;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
